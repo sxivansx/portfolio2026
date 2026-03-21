@@ -1,26 +1,199 @@
 @import "tailwindcss";
 
+/* ── OS X Yosemite Color Palette ─────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary accent */
+  --color-accent: #007AFF;
+  --color-accent-hover: #0063d1;
+
+  /* Text */
+  --color-text-primary: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-text-tertiary: #aeaeb2;
+  --color-text-inverse: #ffffff;
+
+  /* Backgrounds */
+  --color-bg-window: rgba(255, 255, 255, 0.95);
+  --color-bg-window-solid: #ffffff;
+  --color-bg-titlebar: linear-gradient(180deg, rgba(232, 232, 232, 0.95) 0%, rgba(210, 210, 210, 0.95) 100%);
+  --color-bg-titlebar-inactive: rgba(246, 246, 246, 0.95);
+  --color-bg-sidebar: rgba(240, 240, 240, 0.6);
+  --color-bg-content: #ffffff;
+  --color-bg-hover: rgba(0, 0, 0, 0.04);
+  --color-bg-active: rgba(0, 122, 255, 0.12);
+  --color-bg-card: #ffffff;
+  --color-bg-input: #ffffff;
+
+  /* Dock */
+  --color-dock-bg: rgba(255, 255, 255, 0.22);
+  --color-dock-border: rgba(255, 255, 255, 0.35);
+
+  /* Menu bar */
+  --color-menubar-bg: rgba(255, 255, 255, 0.4);
+  --color-menubar-border: rgba(0, 0, 0, 0.12);
+
+  /* Borders */
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-light: rgba(0, 0, 0, 0.06);
+  --color-border-strong: rgba(0, 0, 0, 0.18);
+
+  /* Shadows */
+  --shadow-window: 0 22px 70px rgba(0, 0, 0, 0.35), 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+  --shadow-window-inactive: 0 5px 20px rgba(0, 0, 0, 0.15), 0 0 0 0.5px rgba(0, 0, 0, 0.08);
+  --shadow-dock: 0 0 20px rgba(0, 0, 0, 0.12);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  /* Traffic lights */
+  --color-traffic-close: #ff5f57;
+  --color-traffic-minimize: #febc2e;
+  --color-traffic-maximize: #28c840;
+  --color-traffic-inactive: #d4d4d4;
+
+  /* Tags / chips */
+  --color-tag-bg: rgba(0, 122, 255, 0.08);
+  --color-tag-text: #007AFF;
+  --color-tag-border: rgba(0, 122, 255, 0.15);
+
+  /* Status */
+  --color-success: #34c759;
+  --color-warning: #ff9f0a;
+  --color-error: #ff3b30;
+
+  /* Spacing */
+  --radius-window: 6px;
+  --radius-card: 5px;
+  --radius-tag: 3px;
+  --radius-button: 4px;
+  --radius-dock: 16px;
+
+  /* Yosemite wallpaper gradient */
+  --wallpaper: linear-gradient(
+    175deg,
+    #1e3156 0%,
+    #3d4a7a 8%,
+    #6e5488 16%,
+    #a45d7e 24%,
+    #d4756a 32%,
+    #e89872 40%,
+    #f0b87a 48%,
+    #e8c88a 56%,
+    #c4b07a 64%,
+    #8a9a6a 72%,
+    #5a7a52 80%,
+    #3a5a3a 88%,
+    #1e3620 100%
+  );
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Base Reset ──────────────────────────────────────────── */
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── macOS Thin Scrollbar ────────────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.18); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.3); }
+
+/* ── Links & Selection ───────────────────────────────────── */
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+::selection { background: rgba(0, 122, 255, 0.2); }
+
+/* ── Animations ──────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes windowOpen {
+  from { opacity: 0; transform: scale(0.88); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+@keyframes progressSlide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Traffic Light Hover ─────────────────────────────────── */
+.traffic-group:hover .traffic-dot {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.traffic-group:hover .traffic-dot.inactive {
+  background: var(--color-traffic-close) !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.traffic-group:hover .traffic-dot.inactive:nth-child(2) {
+  background: var(--color-traffic-minimize) !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.traffic-group:hover .traffic-dot.inactive:nth-child(3) {
+  background: var(--color-traffic-maximize) !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ── Dock Icon Bounce ────────────────────────────────────── */
+@keyframes dockBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* ── Window Content Styles ───────────────────────────────── */
+.window-content {
+  padding: 20px;
+}
+
+.window-content h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 12px 0;
+}
+
+.window-content h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 16px 0 8px 0;
+}
+
+.window-content p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin: 0 0 8px 0;
 }
