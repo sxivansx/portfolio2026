@@ -92,7 +92,7 @@ export default function SpotifyWidget() {
           <div style={{
             width: '100%',
             height: '100%',
-            background: 'linear-gradient(135deg, #1db954, #158b3e)',
+            background: 'linear-gradient(135deg, #A6D95A, #85B839)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -118,7 +118,7 @@ export default function SpotifyWidget() {
               width: 6,
               height: 6,
               borderRadius: '50%',
-              background: '#1db954',
+              background: '#A6D95A',
               animation: 'pulse 1.5s ease infinite',
             }} />
           )}
@@ -166,7 +166,7 @@ export default function SpotifyWidget() {
                 width: `${progressPct}%`,
                 height: '100%',
                 borderRadius: 2,
-                background: '#1db954',
+                background: '#A6D95A',
                 transition: 'width 1s linear',
               }} />
             </div>
@@ -193,7 +193,7 @@ export default function SpotifyWidget() {
               gap: 6,
               marginTop: 10,
               fontSize: 11,
-              color: '#1db954',
+              color: '#A6D95A',
               textDecoration: 'none',
               fontWeight: 500,
             }}
