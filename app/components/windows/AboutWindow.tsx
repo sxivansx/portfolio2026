@@ -99,9 +99,14 @@ export default function AboutWindow() {
               <p style={{ fontSize: 12, color: '#666', margin: '0 0 2px 0' }}>
                 B.E. in {education.field}
               </p>
-              <p style={{ fontSize: 11, color: '#888', margin: 0 }}>
+              <p style={{ fontSize: 11, color: '#888', margin: '0 0 2px 0' }}>
                 {education.years}
               </p>
+              {education.cgpa && (
+                <p style={{ fontSize: 11, color: '#888', margin: 0 }}>
+                  CGPA: {education.cgpa}
+                </p>
+              )}
             </div>
           )}
 
