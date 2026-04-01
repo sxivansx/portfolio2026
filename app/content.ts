@@ -5,10 +5,10 @@
 export const PORTFOLIO_CONTENT = {
   name: "Shivansh",
   role: "Brand, UI/UX, and Graphic Designer, Frontend Dev",
-  bio: "I craft brands from the ground up — from logos and visual identity to websites and digital experiences. I blend design thinking, creativity, and technology to create intuitive, memorable user experiences.",
+  bio: "I do Brand, UI/UX, Graphics, and Motion. I work across product design, visual systems, logos, and complete brand identities from scratch. Led event branding end-to-end covering graphics, motion intros, stage visuals, and merch. I also build digital products and websites, handling both design and frontend development.",
   coCurricular: [
-    "Software Lead at Vertex — ETE club at DSCE, organising department events including the Vertex Dept Fest",
-    "Point Blank — College coding team; worked on UI, graphics, and content for ACM ICPC, GSoC, and SIH",
+    "Software Lead at Vertex — Founding member; designed the original logo and brand identity. Led the Software domain — spearheaded technical projects and built the club's website",
+    "Point Blank — Active member of technical community focused on open source, hackathons, and competitive programming. Worked on UI, graphics, and content for ACM ICPC, GSoC, and SIH",
     "CPA (Centre for Performing Arts) — Designed fest logos, brochures, social posts, mementos, and event backdrops",
   ],
   projects: [
@@ -48,7 +48,7 @@ export const PORTFOLIO_CONTENT = {
       id: "p5",
       name: "Zenith",
       description:
-        "Complete visual and digital branding for a 36-hour national-level tech fest — space-themed identity applied across landing page UI, social banners, ID cards, brochures, and event badges.",
+        "Full creative production — brand, UI, print/packaging, photography, and videography for a 24-hour national-level hackathon by Point Blank.",
       tech: ["Figma", "Illustrator", "Photoshop"],
       url: "https://www.behance.net/gallery/222076925/Zenith",
     },
@@ -58,40 +58,71 @@ export const PORTFOLIO_CONTENT = {
       company: "Remotestar",
       role: "Product Designer & Frontend Dev",
       highlights: [
-        "Redesigned the logo and led the complete rebranding of Remotestar's visual identity.",
-        "Designed and built a new landing page from scratch in Framer — handling both design and code implementation.",
-        "Overhauled the candidate platform's UI/UX and entire user flow, and contributed to the frontend codebase.",
-        "Revamped the recruiter platform's UX for improved usability and workflow.",
-        "Created marketing collateral and other brand assets to support growth initiatives.",
+        "Rebranded the company with a new logo, wordmark, and complete visual identity.",
+        "Designed and developed rebranded landing page from scratch in Framer with CMS integration.",
+        "Worked on candidate platform frontend development.",
+        "Designed the entire UI/UX and user flow for the new candidate platform.",
+        "Revamped the UX of the recruiter platform for improved clarity and usability.",
+        "Received Values At Work Award.",
+      ],
+    },
+    {
+      company: "Twintro",
+      role: "UI/UX Designer",
+      highlights: [
+        "Freelance UI/UX design for a US-based product.",
+      ],
+    },
+    {
+      company: "Point Blank",
+      role: "Design Lead, Zenith Hackathon",
+      highlights: [
+        "Led complete design for Zenith, a 24-hour national-level hackathon by Point Blank.",
+        "Built full brand identity — logo, color system, typography, and iconography.",
+        "Designed landing page, social media creatives, mementos, ID cards, badges, and other graphics.",
+        "Led on-ground photography and videography.",
       ],
     },
     {
       company: "Prauga",
       role: "Product & UI/UX Designer",
       highlights: [
-        "Designed the launcher and full system UI for Pvot OS.",
-        "Created UI/UX for multiple Pvot apps, ensuring a cohesive experience across the ecosystem.",
+        "Designed the launcher UI and full system interface for Prauga OS (PVOT-OSS).",
+        "Created UI/UX for multiple apps with a clean, minimal approach.",
+        "Created custom iconography and a complete set of app icons.",
         "Built the complete brand identity from scratch — logo, typography, and visual language.",
-        "Designed and developed the official Prauga and Pvot websites in Framer.",
+        "Designed and developed the official Prauga website in Framer.",
       ],
     },
     {
       company: "IICT",
-      role: "Visual Designer",
+      role: "Event Identity Designer",
       highlights: [
+        "Redesigned the official IICT website (compilertech.org).",
         "Designed complete visual and motion assets including conference branding, banners, stage visuals, and animated intro videos.",
       ],
     },
     {
-      company: "Freelance",
-      role: "Graphic & UI/UX Designer",
+      company: "HiremeClub",
+      role: "UI/UX Designer",
       highlights: [
-        "Delivered custom design solutions for various clients including branding, web design, and digital assets.",
+        "Revamped the platform UI with a fresh, modern visual direction.",
+        "Redesigned key screens and user flows for improved clarity and experience.",
+      ],
+    },
+    {
+      company: "Freelance",
+      role: "Designer & Frontend Developer",
+      highlights: [
+        "Partnered with clients to deliver end-to-end design and frontend solutions across branding, UI/UX, and web.",
+        "Designed and developed production-ready websites using Next.js, Tailwind CSS, and Framer.",
+        "Crafted complete brand identities including logo, typography, and visual language.",
+        "Managed projects independently from brief to final delivery across India and international.",
       ],
     },
   ],
   education: {
-    institution: "Dayanand Sagar College of Engineering",
+    institution: "Dayananda Sagar College of Engineering",
     field: "Electronics & Telecommunication",
     cgpa: "7.5",
     years: "2023–2027",
@@ -108,7 +139,7 @@ export const PORTFOLIO_CONTENT = {
     location: "Bengaluru, India",
     phone: "+91 9792975227",
     summary:
-      "Creative designer skilled in Brand, UI/UX, Graphics, and Motion Design. I build brands from scratch—logo, theme, graphics, website—focused on user-centered, impactful design supported by strong storytelling and visual systems.",
+      "Designer skilled in Brand, UI/UX, Graphics, and Motion. I build brands from scratch, lead event branding end-to-end, and ship digital products handling both design and frontend development.",
     coreSkills: [
       "Problem Discovery", "System Thinking", "UI Design", "UX Research",
       "Prototyping", "Wireframing", "Design Systems", "Storytelling",
