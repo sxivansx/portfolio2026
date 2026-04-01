@@ -1,3 +1,78 @@
+# shivansh.life — Project Plan
+
+## Feature Roadmap
+
+macOS Yosemite-themed interactive portfolio. Each feature maps to a "native app" on the desktop.
+
+### Done
+
+- [x] **Boot Sequence** — macOS startup animation on load
+- [x] **Menu Bar** — top bar with app name, mute toggle, clock
+- [x] **Dock** — app launcher with magnification and open indicators
+- [x] **Window Manager** — draggable, focusable, closable windows with z-index
+- [x] **About Me** (System Preferences) — overview, skills, experience, education tabs
+- [x] **Projects** (Finder) — design project browser
+- [x] **Contact** (Contacts) — contact info window
+- [x] **FaceTime** — video/camera window
+- [x] **Spotify Widget** — live now-playing integration
+- [x] **Resume** (Preview) — PDF-style resume viewer
+- [x] **Video Player** (QuickTime) — work demo playback
+- [x] **YouTube Player** (QuickTime) — Zenith project video
+- [x] **Calendar** — month view with events
+- [x] **Desktop Icons** — Resume.pdf, zenith.mov with double-click to open
+- [x] **Context Menu** — right-click wallpaper switcher
+- [x] **Sound Design** — Tone.js hover, click, open/close sounds
+- [x] **Mobile Gate** — mobile device handling
+- [x] **Terminal** — interactive shell with commands (whoami, skills, ls code, neofetch, git log, open \<app\>, etc.) — showcases coding projects
+
+### Up Next — Creative
+
+- [ ] **Stickies** — floating sticky notes with testimonials / design philosophy quotes
+- [ ] **Photo Booth** — gallery grid of design work, brand assets, behind-the-scenes
+- [ ] **Messages (iMessage)** — scripted conversation guestbook or personality showcase
+- [ ] **iBooks** — bookshelf of case studies or design influences reading list
+- [ ] **Maps** — Apple Maps window with Bengaluru location pin
+- [ ] **Dynamic Wallpaper** — wallpaper auto-shifts based on visitor's local time (dawn/day/dusk/night)
+
+### Up Next — Technical / UX
+
+- [ ] **Spotlight Search** — Cmd+Space fuzzy search across projects, skills, experience; opens relevant window
+- [ ] **Launchpad** — overlay grid of all apps for discoverability
+- [ ] **Notification Center** — slide-in panel with recent activity / career milestones
+- [ ] **Expose / Mission Control** — tile all open windows with keyboard shortcut
+- [ ] **Trash Can** — drag desktop icons to trash (easter egg)
+- [ ] **Desktop Folders** — grouped content icons (Documents, Downloads)
+
+### Up Next — Widgets
+
+Small, glanceable pieces that live on the desktop or in a Dashboard/Notification Center overlay. Inspired by macOS Dashboard widgets and Yosemite's Today view.
+
+- [ ] **Weather Widget** — shows real weather for Bengaluru (or visitor's location via IP); Yosemite glass style
+- [ ] **Clock Widget** — analog clock face with smooth second hand, matches the retro desktop vibe
+- [ ] **GitHub Contribution Graph** — live heatmap pulled from your GitHub profile; proves you ship code
+- [ ] **Behance Recent Work** — latest 3-4 Behance shots as thumbnail cards with links
+- [ ] **Now / Status Widget** — a "/now" page as a widget: what you're currently working on, learning, reading
+- [ ] **Visitor Counter** — retro hit counter ("You are visitor #4,827") — nostalgic and fun
+- [ ] **Mini Bio Card (vCard)** — draggable business card widget with name, role, photo, and key links
+- [ ] **Pomodoro Timer** — a working focus timer; shows you value productivity (and it's actually useful)
+- [ ] **Quote of the Day** — rotating design/creativity quotes; subtle personality touch
+- [ ] **Calculator** — working retro macOS calculator (you have `Calculator.png` already); pure delight
+- [ ] **World Clock** — multiple timezone clocks (Bengaluru, SF, London) — useful if targeting international clients
+- [ ] **System Monitor** — fake CPU/RAM/Network graphs that actually show page performance metrics (load time, bundle size)
+- [ ] **Sticky Stats** — small stat cards: years of experience, projects shipped, tools mastered, clients worked with
+
+### Backlog / Polish
+
+- [ ] Keyboard shortcuts (Cmd+Q close, Cmd+W close, Cmd+Space spotlight)
+- [ ] Window minimize animation to dock
+- [ ] Window maximize / fullscreen toggle
+- [ ] Dock folder stacks (fan/grid popup)
+- [ ] Loading states for external content (Spotify, videos)
+- [ ] Accessibility pass (keyboard nav, screen reader labels)
+- [ ] SEO meta tags and Open Graph for link previews
+
+---
+
 # Deploy shivansh.life to DigitalOcean
 
 ## Phase 1: Simple Deployment (Manual)
@@ -278,6 +353,7 @@ Go to https://developer.spotify.com/dashboard → your app → Edit Settings:
 - [ ] All Yosemite icons load
 - [ ] Sound effects work (Tone.js)
 - [ ] Windows open/close/drag properly
+- [ ] Terminal commands work (whoami, ls code, neofetch, open \<app\>)
 
 ---
 
