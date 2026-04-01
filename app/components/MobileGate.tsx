@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 
 export default function MobileGate() {
   const [time, setTime] = useState('')
@@ -107,28 +106,6 @@ export default function MobileGate() {
           >
             <div
               style={{
-                width: '80px',
-                height: '80px',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.08))',
-                border: '2px solid rgba(255,255,255,0.3)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/yosemite-icons/Terminal.png"
-                alt="Terminal"
-                width={48}
-                height={48}
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-            <div
-              style={{
                 marginTop: '12px',
                 fontSize: '17px',
                 fontWeight: 500,
@@ -166,13 +143,6 @@ export default function MobileGate() {
                     textAlign: 'center',
                   }}
                 >
-                  <Image
-                    src="/yosemite-icons/Terminal.png"
-                    alt="Terminal"
-                    width={48}
-                    height={48}
-                    style={{ objectFit: 'contain', marginBottom: '12px' }}
-                  />
                   <div
                     style={{
                       fontSize: '16px',
@@ -230,30 +200,6 @@ export default function MobileGate() {
             </div>
           )}
 
-          {/* Bottom hint */}
-          <div
-            style={{
-              position: 'absolute',
-              bottom: '40px',
-              left: 0,
-              right: 0,
-              textAlign: 'center',
-              animation: 'fadeIn 1.5s ease-out 1.5s both',
-            }}
-          >
-            <div
-              style={{
-                fontSize: '14px',
-                fontWeight: 300,
-                color: 'rgba(255,255,255,0.4)',
-                letterSpacing: '1px',
-              }}
-            >
-              <span style={{ animation: 'pulse 2.5s ease-in-out infinite' }}>
-                ⌘ open on desktop
-              </span>
-            </div>
-          </div>
         </div>
       </div>
   )
